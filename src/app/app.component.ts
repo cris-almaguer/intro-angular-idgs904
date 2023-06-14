@@ -9,12 +9,13 @@ export class AppComponent
 {
   title = 'intro-angular-idgs904';
 
-  duplicationValue = (value:number) : number => value * 2;
+  duplicateValue = (value:number) : number => value * 2;
 
   Student =
   {
     id: 20001468,
     name: 'Daniel',
-    birtDate: new Date()
+    birtDate: new Date(),
+    payInscription: 2214
   }
 }

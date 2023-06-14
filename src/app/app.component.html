@@ -1,32 +1,51 @@
+<nav class="navbar bg-dark navbar-dark">
+  <div class="container ">
+    <a class="navbar-brand text-uppercase" href="#">{{ title }}</a>
+  </div>
+</nav>
 
-<div>
-  <h1>{{ title }}</h1>
-</div>
+<div class="container py-3">
+  <div class="row">
+    <p>Hola chiquillo, ¿Ya viste Transformers: El Despertar de las Bestias?</p>
 
-<p>Hola chiquillo, ¿Ya viste Transformers: El Despertar de las Bestias?</p>
+    <div>
+      <h3>La suma de 2 + 2 es: {{ 2 + 2 }}</h3>
+    </div>
 
-<div>
-  <h3>La suma de 2 + 2 es: {{ 2 + 2 }}</h3>
-</div>
+    <br>
 
-<br>
+    <div>
+      <h3>El doble de 3 es: {{ duplicateValue(3) }}</h3>
+    </div>
 
-<div>
-  <h3>El doble de 3 es: {{ duplicationValue(3) }}</h3>
-</div>
+    <hr class="my-3">
 
-<br>
+    <h2 class="display-6 fw-bold">Alumno IDGS</h2>
+    <div class="container-fluid">
+      <div>
+        <h3 class="fs-5"><b>Matricula:</b> {{ Student.id }}</h3>
+      </div>
+      <div>
+        <h3 class="fs-5"><b>Nombre:</b> {{ Student.name }}</h3>
+      </div>
+      <div>
+        <h3 class="fs-5"><b>Fecha de Nacimiento:</b> {{ Student.birtDate | date }}</h3>
+      </div>
+      <div>
+        <h3 class="fs-5"><b>Pago de inscripci&oacute;n:</b> {{ Student.payInscription  | currency }}</h3>
+      </div>
+    </div>
 
-<h2>Alumno</h2>
-<div>
-  <h3>Matricula: {{ Student.id }}</h3>
-</div>
-<hr>
-<div>
-  <h3>Nombre: {{ Student.name }}</h3>
-</div>
-<hr>
+    <hr class="my-3">
 
-<div>
-  <h3>Fecha de nacimiento: {{ Student.birtDate }}</h3>
+    <app-school></app-school>
+
+    <hr class="my-3">
+
+    <app-ievn></app-ievn>
+
+    <hr class="my-3">
+
+    <app-iric></app-iric>
+  </div>
 </div>
