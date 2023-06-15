@@ -1,0 +1,11 @@
+thead
+{
+  color: darkmagenta;
+}
+
+body
+{
+  --bs-success: magenta !important;
+}
+
+

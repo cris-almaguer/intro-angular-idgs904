@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import IricStudents from '../interfaces/iricstudents-interface';
 
 @Component({
   selector: 'app-iric',
@@ -8,7 +9,12 @@ import { Component } from '@angular/core';
 
 export class IricComponent
 {
-  students:any[] =
+  imageWidth:number = 50;
+  imageMargin:number = 2;
+  showImage:boolean = true;
+  filterList: string = '';
+
+  studentsIRIC:IricStudents[] =
   [
     {
       "id": 20008765,
@@ -34,5 +40,10 @@ export class IricComponent
       'payInscription': 2214.11,
       'photo': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuO0rxanFnEBkkQGwT0pdgdVXZY7_OSShbtUytDsoEyZbGDxBfF1Iwk_lCKvYnTs7vS_o&usqp=CAU'
     }
-  ]
+  ];
+
+  showImages = () : void =>
+  {
+    this.showImage = !this.showImage
+  };
 }
