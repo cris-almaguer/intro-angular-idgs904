@@ -7,6 +7,10 @@ import SchoolComponent from 'src/school/school.component';
 import { AppComponent } from './app.component';
 import { IricComponent } from './school/iric/iric.component';
 import { MenuComponent } from './school/menu/menu.component';
+import { SumComponent } from './school/forms/sum/sum.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BasicOpComponent } from './school/forms/basic-op/basic-op.component';
+
 
 @NgModule({
   declarations: [
@@ -14,11 +18,16 @@ import { MenuComponent } from './school/menu/menu.component';
     SchoolComponent,
     IevnComponent,
     IricComponent,
-    MenuComponent
+    MenuComponent,
+    SumComponent,
+    BasicOpComponent,
+    BasicOpComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
