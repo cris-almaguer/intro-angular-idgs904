@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { BasicOpComponent } from '../basic-op/basic-op.component';
+import {MatRadioModule} from '@angular/material/radio';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { BasicOpComponent } from '../basic-op/basic-op.component';
     MatInputModule,
     MatIconModule,
     MatFormFieldModule,
+    MatRadioModule
   ],
   exports:
   [

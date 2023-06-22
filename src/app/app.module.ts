@@ -1,3 +1,4 @@
+import { OperationsModule } from './school/forms/operations/operations.module';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -20,14 +21,12 @@ import { BasicOpComponent } from './school/forms/basic-op/basic-op.component';
     IricComponent,
     MenuComponent,
     SumComponent,
-    BasicOpComponent,
-    BasicOpComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-
+    OperationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
