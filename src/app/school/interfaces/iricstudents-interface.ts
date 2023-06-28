@@ -5,5 +5,6 @@ export default interface IricStudents
   age: number,
   email: string,
   payInscription: number,
-  photo: string
+  photo: string,
+  grade: number
 }

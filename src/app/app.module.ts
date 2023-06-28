@@ -11,6 +11,8 @@ import { MenuComponent } from './school/menu/menu.component';
 import { SumComponent } from './school/forms/sum/sum.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BasicOpComponent } from './school/forms/basic-op/basic-op.component';
+import { StudentsFilterPipe } from './school/students-filter.pipe';
+import { StudentsGradesComponent } from './school/students-grades/students-grades.component';
 
 
 @NgModule({
@@ -21,6 +23,8 @@ import { BasicOpComponent } from './school/forms/basic-op/basic-op.component';
     IricComponent,
     MenuComponent,
     SumComponent,
+    StudentsFilterPipe,
+    StudentsGradesComponent,
   ],
   imports: [
     BrowserModule,
