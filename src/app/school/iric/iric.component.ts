@@ -13,6 +13,7 @@ export class IricComponent
   imageMargin:number = 2;
   showImage:boolean = true;
   filterList: string = '';
+  studentTitle!:string;
 
   studentsIRIC:IricStudents[] =
   [
@@ -49,4 +50,9 @@ export class IricComponent
   {
     this.showImage = !this.showImage
   };
+
+  onGradesClick = (message: string) : void =>
+  {
+    this.studentTitle = `${message}`;
+  }
 }

@@ -29,7 +29,7 @@
               <th class="align-middle">Edad</th>
               <th class="align-middle">Correo</th>
               <th class="align-middle">Pago</th>
-              <th class="align-middle">Calificaci&oacute;n</th>
+              <th class="align-middle">Calificaci&oacute;n - {{ studentTitle }}</th>
               <th></th>
             </tr>
           </thead>
@@ -44,7 +44,7 @@
               <td class="align-middle">{{ item.email }}</td>
               <td class="align-middle">{{ item.payInscription | currency }}</td>
               <td class="align-middle">{{ item.grade }}</td>
-              <td><app-students-grades [grades]="student.grade"></app-students-grades></td>
+              <td><app-students-grades (gradesClick)="onGradesClick($event)" [grades]="item.grade"></app-students-grades></td>
             </tr>
           </tbody>
         </table>
