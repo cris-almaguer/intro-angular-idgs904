@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app.routing.module';
 import { OperationsModule } from './school/forms/operations/operations.module';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -32,7 +33,8 @@ import { ReactiveStudentComponent } from './forms/reactive-student/reactive-stud
     FormsModule,
     BrowserAnimationsModule,
     OperationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

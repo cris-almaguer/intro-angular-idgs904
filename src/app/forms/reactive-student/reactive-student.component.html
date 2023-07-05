@@ -1,6 +1,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-4">
+      <h2 class="fw-bold">Formulario de registro</h2>
       <form (ngSubmit)="onSubmit()" [formGroup]="studentForm">
         <div class="mb-4">
           <label for="inputId" class="form-label">Matricula</label>
@@ -57,13 +58,13 @@
           </div>
         </div>
         <div class="d-grid gap-2 float-end py-3">
-          <button class="btn btn-primary rounded-5" type="submit">Guardar</button>
+          <button class="btn btn-success rounded-5" type="submit">Guardar</button>
         </div>
       </form>
     </div>
     <div class="col-md-8">
-      <h1>Registros</h1>
-      <table>
+      <h2 class="fw-bold">Registros</h2>
+      <table class="table table-bordered">
         <thead>
           <tr>
             <th>Foto</th>
